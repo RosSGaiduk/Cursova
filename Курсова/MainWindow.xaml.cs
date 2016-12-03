@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Курсова.Controlls;
 
 namespace Курсова
 {
@@ -23,7 +24,7 @@ namespace Курсова
         public MainWindow()
         {
             InitializeComponent();           
-            MainThis.Children.Add(new UserControl1());
+            MainThis.Children.Add(new CreateControl(this));
         }
     }
 }

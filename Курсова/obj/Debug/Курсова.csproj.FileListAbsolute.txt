@@ -3,7 +3,6 @@ C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\П
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Курсова.csprojResolveAssemblyReference.cache
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Курсова.csproj.Курсова.exe.config
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\MainWindow.g.cs
-C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\UserControl1.g.cs
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\App.g.cs
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Курсова_MarkupCompile.cache
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Курсова_MarkupCompile.lref
@@ -17,9 +16,12 @@ C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\П
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\bin\Debug\MySql.Data.Entity.EF6.xml
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\bin\Debug\MySql.Web.xml
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\MainWindow.baml
-C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\UserControl1.baml
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Курсова.g.resources
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Курсова.Properties.Resources.resources
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Курсова.csproj.GenerateResource.Cache
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Курсова.exe
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Курсова.pdb
+C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\DeleteControl.g.cs
+C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\DeleteControl.baml
+C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\CreateControl.g.cs
+C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\CreateControl.baml

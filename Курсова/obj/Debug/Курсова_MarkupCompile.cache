@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\App.xaml
-21053122409
+3403350235
 
-161040467953
+18-996778361
 17-1519676644
-MainWindow.xaml;UserControl1.xaml;
+Controlls\CreateControl.xaml;Controlls\DeleteControl.xaml;MainWindow.xaml;
 
 False
 
