@@ -220,5 +220,10 @@ namespace Курсова.Controlls
             //parent.MainThis.Children.Add(new DeleteControl(parent));
             viewController.goTo("deletePage");
         }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("showAll");
+        }
     }
 }

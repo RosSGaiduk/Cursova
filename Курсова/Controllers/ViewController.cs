@@ -34,6 +34,12 @@ namespace Курсова.Controllers
                         mainWind.MainThis.Children.Add(new CreateControl(mainWind));
                     }
                     break;
+                case "showAll":
+                    {
+                        mainWind.MainThis.Children.Clear();
+                        mainWind.MainThis.Children.Add(new ShowAllElements(mainWind));
+                    }
+                    break;
             }
         }
 

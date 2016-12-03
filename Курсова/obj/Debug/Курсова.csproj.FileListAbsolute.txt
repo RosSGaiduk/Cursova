@@ -25,3 +25,5 @@ C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\П
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\DeleteControl.baml
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\CreateControl.g.cs
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\CreateControl.baml
+C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\ShowAllElements.g.cs
+C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\ShowAllElements.baml

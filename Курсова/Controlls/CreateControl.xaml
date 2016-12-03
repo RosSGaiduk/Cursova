@@ -36,5 +36,6 @@
         <TextBox x:Name="textBox11" HorizontalAlignment="Left" Height="23" Margin="171,345,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button" Content="Page for deleting" Click="Button_Click" HorizontalAlignment="Left" Margin="284,17,0,0" VerticalAlignment="Top" Width="106" Height="30"/>
         <Button x:Name="button1" Content="Add" Click="Button_Click_1" HorizontalAlignment="Left" Margin="315,338,0,0" VerticalAlignment="Top" Width="75" Height="33"/>
+        <Button x:Name="button_Copy" Content="Show all" Click="Button2_Click" HorizontalAlignment="Left" Margin="171,17,0,0" VerticalAlignment="Top" Width="106" Height="30"/>
     </Grid>
 </UserControl>

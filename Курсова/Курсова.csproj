@@ -82,6 +82,9 @@
     <Compile Include="Controlls\DeleteControl.xaml.cs">
       <DependentUpon>DeleteControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controlls\ShowAllElements.xaml.cs">
+      <DependentUpon>ShowAllElements.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Services\ChemisrtyService.cs" />
     <Compile Include="Services\OrganicService.cs" />
     <Compile Include="Services\PageService.cs" />
@@ -92,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controlls\DeleteControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controlls\ShowAllElements.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -136,7 +143,125 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="MyImages\Графічні моделі\Європій.png" />
+    <Resource Include="MyImages\Графічні моделі\Індій.png" />
+    <Resource Include="MyImages\Графічні моделі\Іридій.png" />
+    <Resource Include="MyImages\Графічні моделі\Ітербій.png" />
+    <Resource Include="MyImages\Графічні моделі\Ітрій.png" />
+    <Resource Include="MyImages\Графічні моделі\Актиній.png" />
+    <Resource Include="MyImages\Графічні моделі\Алюміній.png" />
+    <Resource Include="MyImages\Графічні моделі\Америцій.png" />
+    <Resource Include="MyImages\Графічні моделі\Аргентум.png" />
+    <Resource Include="MyImages\Графічні моделі\Аргон.png" />
+    <Resource Include="MyImages\Графічні моделі\Арсен.png" />
+    <Resource Include="MyImages\Графічні моделі\Астат.png" />
+    <Resource Include="MyImages\Графічні моделі\Аурум.png" />
+    <Resource Include="MyImages\Графічні моделі\Бісмут.svg.png" />
+    <Resource Include="MyImages\Графічні моделі\Барій.png" />
+    <Resource Include="MyImages\Графічні моделі\Берилій.png" />
+    <Resource Include="MyImages\Графічні моделі\Берклій.png" />
+    <Resource Include="MyImages\Графічні моделі\Бор.png" />
+    <Resource Include="MyImages\Графічні моделі\Борій.png" />
+    <Resource Include="MyImages\Графічні моделі\Бром.png" />
+    <Resource Include="MyImages\Графічні моделі\Ванадій.png" />
+    <Resource Include="MyImages\Графічні моделі\Вольфрам.png" />
+    <Resource Include="MyImages\Графічні моделі\Гідроген.png" />
+    <Resource Include="MyImages\Графічні моделі\Гадоліній.png" />
+    <Resource Include="MyImages\Графічні моделі\Галій.png" />
+    <Resource Include="MyImages\Графічні моделі\Гасій.png" />
+    <Resource Include="MyImages\Графічні моделі\Гелій.png" />
+    <Resource Include="MyImages\Графічні моделі\Германій.png" />
+    <Resource Include="MyImages\Графічні моделі\Гольмій.png" />
+    <Resource Include="MyImages\Графічні моделі\Дармштадтій.png" />
+    <Resource Include="MyImages\Графічні моделі\Диспрозій.png" />
+    <Resource Include="MyImages\Графічні моделі\Дубній.png" />
+    <Resource Include="MyImages\Графічні моделі\Ейнштейній.png" />
+    <Resource Include="MyImages\Графічні моделі\Ербій.png" />
+    <Resource Include="MyImages\Графічні моделі\Йод.png" />
+    <Resource Include="MyImages\Графічні моделі\Кадмій.png" />
+    <Resource Include="MyImages\Графічні моделі\Калій.png" />
+    <Resource Include="MyImages\Графічні моделі\Каліфорній.png" />
+    <Resource Include="MyImages\Графічні моделі\Кальцій.png" />
+    <Resource Include="MyImages\Графічні моделі\Карбон.png" />
+    <Resource Include="MyImages\Графічні моделі\Кобальт.png" />
+    <Resource Include="MyImages\Графічні моделі\Коперницій.png" />
+    <Resource Include="MyImages\Графічні моделі\Криптон.png" />
+    <Resource Include="MyImages\Графічні моделі\Ксенон.png" />
+    <Resource Include="MyImages\Графічні моделі\Купрум.png" />
+    <Resource Include="MyImages\Графічні моделі\Кюрій.png" />
+    <Resource Include="MyImages\Графічні моделі\Лівермоній.png" />
+    <Resource Include="MyImages\Графічні моделі\Літій.png" />
+    <Resource Include="MyImages\Графічні моделі\Лантан.png" />
+    <Resource Include="MyImages\Графічні моделі\Лоуренсій.png" />
+    <Resource Include="MyImages\Графічні моделі\Лютецій.png" />
+    <Resource Include="MyImages\Графічні моделі\Магній.png" />
+    <Resource Include="MyImages\Графічні моделі\Майтнерій.png" />
+    <Resource Include="MyImages\Графічні моделі\Манган.png" />
+    <Resource Include="MyImages\Графічні моделі\Менделєвій.png" />
+    <Resource Include="MyImages\Графічні моделі\Меркурій.png" />
+    <Resource Include="MyImages\Графічні моделі\Молібден.png" />
+    <Resource Include="MyImages\Графічні моделі\Нікель.png" />
+    <Resource Include="MyImages\Графічні моделі\Ніобій.png" />
+    <Resource Include="MyImages\Графічні моделі\Нітроген.png" />
+    <Resource Include="MyImages\Графічні моделі\Натрій.png" />
+    <Resource Include="MyImages\Графічні моделі\Неодим.png" />
+    <Resource Include="MyImages\Графічні моделі\Неон.png" />
+    <Resource Include="MyImages\Графічні моделі\Нептуній.png" />
+    <Resource Include="MyImages\Графічні моделі\Нобелій.png" />
+    <Resource Include="MyImages\Графічні моделі\Оксиген.png" />
+    <Resource Include="MyImages\Графічні моделі\Осмій.png" />
+    <Resource Include="MyImages\Графічні моделі\Паладій.png" />
+    <Resource Include="MyImages\Графічні моделі\Платина.png" />
+    <Resource Include="MyImages\Графічні моделі\Плутоний.png" />
+    <Resource Include="MyImages\Графічні моделі\Плюмбум.png" />
+    <Resource Include="MyImages\Графічні моделі\Полоній.png" />
+    <Resource Include="MyImages\Графічні моделі\Празеодим.png" />
+    <Resource Include="MyImages\Графічні моделі\Прометій.png" />
+    <Resource Include="MyImages\Графічні моделі\Протактиній.png" />
+    <Resource Include="MyImages\Графічні моделі\Радій.png" />
+    <Resource Include="MyImages\Графічні моделі\Радон.png" />
+    <Resource Include="MyImages\Графічні моделі\Реній.png" />
+    <Resource Include="MyImages\Графічні моделі\Рендтеній.png" />
+    <Resource Include="MyImages\Графічні моделі\Родій.png" />
+    <Resource Include="MyImages\Графічні моделі\Розерфордій.png" />
+    <Resource Include="MyImages\Графічні моделі\Рубідій.png" />
+    <Resource Include="MyImages\Графічні моделі\Рутеній.png" />
+    <Resource Include="MyImages\Графічні моделі\Самарій.png" />
+    <Resource Include="MyImages\Графічні моделі\Селен.png" />
+    <Resource Include="MyImages\Графічні моделі\Сиборний.png" />
+    <Resource Include="MyImages\Графічні моделі\Силіцій.png" />
+    <Resource Include="MyImages\Графічні моделі\Скандій.png" />
+    <Resource Include="MyImages\Графічні моделі\Станум.png" />
+    <Resource Include="MyImages\Графічні моделі\Стибій.png" />
+    <Resource Include="MyImages\Графічні моделі\Стронцій.png" />
+    <Resource Include="MyImages\Графічні моделі\Сульфур.png" />
+    <Resource Include="MyImages\Графічні моделі\Талій.png" />
+    <Resource Include="MyImages\Графічні моделі\Тантал.png" />
+    <Resource Include="MyImages\Графічні моделі\Телур.png" />
+    <Resource Include="MyImages\Графічні моделі\Тербій.png" />
+    <Resource Include="MyImages\Графічні моделі\Технецій.png" />
+    <Resource Include="MyImages\Графічні моделі\Титан.png" />
+    <Resource Include="MyImages\Графічні моделі\Торій.png" />
+    <Resource Include="MyImages\Графічні моделі\Тулій.png" />
+    <Resource Include="MyImages\Графічні моделі\Унунквадій.png" />
+    <Resource Include="MyImages\Графічні моделі\Унуноктій.png" />
+    <Resource Include="MyImages\Графічні моделі\Унунпентій.png" />
+    <Resource Include="MyImages\Графічні моделі\Унунсептій.png" />
+    <Resource Include="MyImages\Графічні моделі\Унунтрій.png" />
+    <Resource Include="MyImages\Графічні моделі\Уран.png" />
+    <Resource Include="MyImages\Графічні моделі\Фермій.png" />
+    <Resource Include="MyImages\Графічні моделі\Ферум.png" />
+    <Resource Include="MyImages\Графічні моделі\Флуор.png" />
+    <Resource Include="MyImages\Графічні моделі\Фосфор.png" />
+    <Resource Include="MyImages\Графічні моделі\Францій.svg.png" />
+    <Resource Include="MyImages\Графічні моделі\Хлор.png" />
+    <Resource Include="MyImages\Графічні моделі\Хром.png" />
+    <Resource Include="MyImages\Графічні моделі\Цезій.png" />
+    <Resource Include="MyImages\Графічні моделі\Церій.png" />
+    <Resource Include="MyImages\Графічні моделі\Цинк.png" />
+    <Resource Include="MyImages\Графічні моделі\Цирконій.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
