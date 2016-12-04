@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace Курсова
         public List<EmptyPage> Pages { get; set; }   
         public virtual string getString() 
         {
-            return "Full name: "+FullName;
+            return "Full name:"+FullName;
         }
     }
 
@@ -71,9 +72,22 @@ namespace Курсова
                 +Period+"\natomic weight: "+AtomicWeight+
                 "\norbital: "+Orbital+"\ngraphic model: "+GraphicModel+"\nformula: "+Formula+"\nnatural name: "+NaturalName;
         }
+
+        public string toStringFile()
+        {
+            return base.getString() + "\r\nid:" + Id + "\r\ntable name:" + TableTame+ "\r\ndescription:" + Description + "\r\ngroup:" + Group + "\r\nvalence:" + Valence + "\r\nperiod:"
+                + Period + "\r\natomic weight: " + AtomicWeight +
+                "\r\norbital:" + Orbital + "\r\ngraphic model:" + GraphicModel + "\r\nformula:" + Formula + "\r\nnatural name:" + NaturalName+ "\r\n^\r\n";
+        }
+        
         public override string ToString()
         {
             return getString();
+        }
+
+        public void writeToFile(String nameFile)
+        {
+            File.AppendAllText(nameFile,toStringFile());
         }
     }
 

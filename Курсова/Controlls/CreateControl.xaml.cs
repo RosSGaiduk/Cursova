@@ -71,6 +71,15 @@ namespace Курсова.Controlls
 
             //readFromFileAndAddToDB("C:/Users/Rostyslav/Desktop/Універ/3 курс Пма-32/1 семестр/ПЗ/fill1.txt");
 
+            //chemistryController = new ChemistryElementController();
+            //List<ChemistryElement> elements = chemistryController.findAll();
+            //chemistryController.close();
+
+            //MessageBox.Show(""+elements.Count);
+            //foreach(ChemistryElement e in elements){
+            //    e.writeToFile("C:/Users/Rostyslav/Desktop/Універ/3 курс Пма-32/1 семестр/ПЗ/writing file.txt");
+            //}
+
             viewController = new ViewController(parent);
 
             comboBox.Items.Add("Хімічний елемент");
