@@ -23,6 +23,7 @@
         </RichTextBox>
         <Label x:Name="label4" Content="Тут ви можете подивитись, що є б бд" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="220"/>
         <Button x:Name="button" Content="Page for creating" Click="Button_Click" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
+        <Button x:Name="button1" Content="Show all" Click="Button1_Click" HorizontalAlignment="Left" Margin="120,315,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
 
 
     </Grid>

@@ -9,7 +9,7 @@
 
     <Grid Name="control1">
 
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Width="100" Height="27" SelectionChanged="comboBox_SelectionChanged"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="35,17,0,0" VerticalAlignment="Top" Width="100" Height="27" SelectionChanged="comboBox_SelectionChanged"/>
         <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="35,62,0,0" VerticalAlignment="Top" Width="126"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="171,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="35,90,0,0" VerticalAlignment="Top" Width="126"/>

@@ -408,5 +408,10 @@ namespace Курсова.Controlls
         {
             viewController.goTo("creatingPage");
         }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("creatingPage");
+        }
     }
 }

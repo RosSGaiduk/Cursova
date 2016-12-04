@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,11 +31,45 @@ namespace Курсова.Controlls
         private ImageController imageController;
         private ViewController viewController;
 
+        private void readFromFileAndAddToDB(string nameFile)
+        {
+            StreamReader filereader = new StreamReader(nameFile);
+            string str = filereader.ReadToEnd();
+
+            //MessageBox.Show(str+"\n"+ str.Split('^').Length+str.Split('^')[0].Split('|').Length);
+
+            string[] elements = str.Split('^');
+            
+            for  (int i = 1; i < elements.Length; i++)
+            {
+                chemistryController = new ChemistryElementController();
+                string[] fields = elements[i].Split('|');
+
+                string str1 = "";
+                for (int i1 = 0; i1 < fields.Length; i1++)
+                    str1 += fields[i1]+"\n";
+                MessageBox.Show(str1);
+                
+                    ChemistryElement chemistryElement = new ChemistryElement(
+                         fields[0], fields[1], fields[2],
+                            int.Parse(fields[3]), fields[4], int.Parse(fields[5]),
+                            double.Parse(fields[6]), 'o', fields[8], fields[9], fields[10]);
+
+                   chemistryElement.GraphicModel = "/MyImages/Графічні моделі/" + chemistryElement.FullName + ".png";
+                   chemistryController.add(chemistryElement);
+
+                chemistryController.close();
+            }
+            filereader.Close();
+        }
+
         public CreateControl(MainWindow wind)
         {
 
             InitializeComponent();
             parent = wind;
+
+            //readFromFileAndAddToDB("C:/Users/Rostyslav/Desktop/Універ/3 курс Пма-32/1 семестр/ПЗ/fill1.txt");
 
             viewController = new ViewController(parent);
 
@@ -72,6 +107,8 @@ namespace Курсова.Controlls
                         labels[3].Content = "Group(int)"; labels[4].Content = "Valence"; labels[5].Content = "Period(int)";
                         labels[6].Content = "Atomic weight(double)"; labels[7].Content = "Orbital(char)"; labels[8].Content = "Graphic model";
                         labels[9].Content = "Formula"; labels[10].Content = "Natural name";
+                        tBoxes[8].IsEnabled = false;
+                        labels[8].IsEnabled = false;
                     }
                     break;
 
@@ -87,6 +124,7 @@ namespace Курсова.Controlls
                             tBoxes[i].IsEnabled = false;
                             labels[i].IsEnabled = false;
                         }
+                        
 
                         labels[0].Content = "Description"; labels[1].Content = "Full name"; labels[2].Content = "Formula";
                         labels[3].Content = "Graphic model";
@@ -140,7 +178,7 @@ namespace Курсова.Controlls
                     chemistryController = new ChemistryElementController();
                     ChemistryElement element = new ChemistryElement(tBoxes[0].Text, tBoxes[1].Text, tBoxes[2].Text,
                         int.Parse(tBoxes[3].Text), tBoxes[4].Text, int.Parse(tBoxes[5].Text),
-                        double.Parse(tBoxes[6].Text), c[0], tBoxes[8].Text, tBoxes[9].Text, tBoxes[10].Text
+                        double.Parse(tBoxes[6].Text), c[0], "/MyImages/Графічні моделі/" + tBoxes[0].Text + ".png", tBoxes[9].Text, tBoxes[10].Text
                         );
                     chemistryController.add(element);
                     MessageBox.Show("Successfully added " + element);

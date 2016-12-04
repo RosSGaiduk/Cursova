@@ -8,10 +8,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+
         <ScrollViewer>
             <StackPanel Name="stPnel">
                 <!--<Image HorizontalAlignment="Left" Height="160" Width="256" Source="/MyImages/me.png" Margin="10,10,0,150.8"></Image>-->
             </StackPanel>
         </ScrollViewer>
+        <Button x:Name="button1" Content="Page for creating" HorizontalAlignment="Left" Margin="391,35,-186,0" VerticalAlignment="Top" Width="95" Height="30" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Deleting page" HorizontalAlignment="Left" Margin="391,0,-186,0" VerticalAlignment="Top" Width="95" Height="30" Click="button2_Click"/>
     </Grid>
 </UserControl>

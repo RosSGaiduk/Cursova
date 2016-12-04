@@ -38,12 +38,24 @@ namespace Курсова.Controlls
             viewController = new ViewController(parent);
 
 
-            addImage("/MyImages/Графічні моделі/Арсен.png");
-            addRichTextBox();
-            addImage("/MyImages/Графічні моделі/Актиній.png");
-            addRichTextBox();
-            addImage("/MyImages/Графічні моделі/Оксиген.png");
-            addRichTextBox();
+            //addImage("/MyImages/Графічні моделі/Арсен.png");
+            //addRichTextBox();
+            //addImage("/MyImages/Графічні моделі/Актиній.png");
+            //addRichTextBox();
+            //addImage("/MyImages/Графічні моделі/Оксиген.png");
+            //addRichTextBox();
+
+
+            chemistryController = new ChemistryElementController();
+            List<ChemistryElement> elements = chemistryController.findAll();
+            for (int i = 0; i < elements.Count; i++)
+            {
+                string str = "/MyImages/Графічні моделі/Гідроген.png";
+                //MessageBox.Show(""+(elements[i].GraphicModel == str));
+                addImage(elements[i].GraphicModel);
+                addRichTextBox(elements[i]);
+                addButton(elements[i].Id);
+            }
 
         }
 
@@ -66,7 +78,7 @@ namespace Курсова.Controlls
 
         }
 
-        private void addRichTextBox()
+        private void addRichTextBox(ChemistryElement element)
         {
             RichTextBox richBox = new RichTextBox();
 
@@ -76,8 +88,30 @@ namespace Курсова.Controlls
             margin.Top = -200;
             richBox.Margin = margin;
             stPnel.Children.Add(richBox);
+            richBox.Document.Blocks.Add(new Paragraph(new Run(element.ToString())));
         }
 
+        private void addButton(int id)
+        {
+            Button button = new Button();
+            button.Content = "Delete " + id;
+            button.Width = 100; button.Height = 20;
+            Thickness margin = button.Margin;
+            margin.Top = 30;
+            margin.Left = 150;
+            button.Margin = margin;
+            stPnel.Children.Add(button);
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("showAll");
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("deletePage");
+        }
     }
 
  
