@@ -272,5 +272,10 @@ namespace Курсова.Controlls
         {
             viewController.goTo("showAll");
         }
+
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("book");
+        }
     }
 }

@@ -76,6 +76,9 @@
     <Compile Include="Controllers\OrganicController.cs" />
     <Compile Include="Controllers\PageController.cs" />
     <Compile Include="Controllers\ViewController.cs" />
+    <Compile Include="Controlls\BookPage1.xaml.cs">
+      <DependentUpon>BookPage1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controlls\CreateControl.xaml.cs">
       <DependentUpon>CreateControl.xaml</DependentUpon>
     </Compile>
@@ -90,6 +93,10 @@
     <Compile Include="Services\PageService.cs" />
     <Compile Include="Services\PictureService.cs" />
     <Compile Include="Services\ServiceAbstract.cs" />
+    <Page Include="Controlls\BookPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controlls\CreateControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

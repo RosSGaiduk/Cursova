@@ -40,6 +40,12 @@ namespace Курсова.Controllers
                         mainWind.MainThis.Children.Add(new ShowAllElements(mainWind));
                     }
                     break;
+                case "book":
+                    {
+                        mainWind.MainThis.Children.Clear();
+                        mainWind.MainThis.Children.Add(new BookPage1(mainWind));
+                    }
+                    break;
             }
         }
 
