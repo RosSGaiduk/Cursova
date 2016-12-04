@@ -22,9 +22,9 @@
             </FlowDocument>
         </RichTextBox>
         <Label x:Name="label4" Content="Тут ви можете подивитись, що є б бд" HorizontalAlignment="Left" Margin="138,123,0,0" VerticalAlignment="Top" Width="220"/>
-        <Button x:Name="button" Content="Page for creating" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
-        <Button x:Name="button1" Content="Show all" Click="Button1_Click" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
-        <Button x:Name="button2" Content="Book" Click="Button2_Click" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
+        <Button x:Name="button" Content="Page for creating" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="95" Height="38" Cursor="Hand"/>
+        <Button x:Name="button1" Content="Show all" Click="Button1_Click" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="95" Height="38" Cursor="Hand"/>
+        <Button x:Name="button2" Content="Book" Click="Button2_Click" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="95" Height="38" Cursor="Hand"/>
 
 
     </Grid>

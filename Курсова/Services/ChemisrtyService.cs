@@ -92,6 +92,32 @@ namespace Курсова.Services
             command.ExecuteNonQuery();
         }
         
+        public ChemistryElement findByTableName(string tableName)
+        {
+            command.CommandText = "Select * from ChemistryElement where tableName = ?id";
+            command.Prepare();
+            command.Parameters.AddWithValue("?id", tableName);
+            reader = command.ExecuteReader();
+            reader.Read();
+            ChemistryElement chemistryElement;
+
+            try
+            {
+                string str = reader[8].ToString();
+                char c = str[0];
+                chemistryElement = new ChemistryElement(int.Parse(reader[0].ToString()), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), int.Parse(reader[4].ToString()), reader[5].ToString(),
+                int.Parse(reader[6].ToString()), double.Parse(reader[7].ToString()), c, reader[9].ToString(), reader[10].ToString(), reader[11].ToString());
+                //Console.Write(chemistryElement);
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                reader.Close();
+                return null;
+            }
+
+            return chemistryElement;
+        }
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

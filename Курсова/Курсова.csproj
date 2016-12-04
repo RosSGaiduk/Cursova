@@ -79,6 +79,9 @@
     <Compile Include="Controlls\BookPage1.xaml.cs">
       <DependentUpon>BookPage1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controlls\CheckedElement.xaml.cs">
+      <DependentUpon>CheckedElement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controlls\CheckingUser.xaml.cs">
       <DependentUpon>CheckingUser.xaml</DependentUpon>
     </Compile>
@@ -97,6 +100,10 @@
     <Compile Include="Services\PictureService.cs" />
     <Compile Include="Services\ServiceAbstract.cs" />
     <Page Include="Controlls\BookPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controlls\CheckedElement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

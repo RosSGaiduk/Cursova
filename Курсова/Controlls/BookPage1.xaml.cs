@@ -66,7 +66,25 @@ namespace Курсова.Controlls
             }
         }
 
-        private void generateMendeleev(List<ChemistryElement> elements)
+        private void Button_Clickk(object sender, EventArgs e)
+        {
+            //string buttonText = ((Button)sender).Text;
+            Button b = (Button)sender;
+            //MessageBox.Show("" + b.Content);
+            string cont = (string)b.Content;
+            string[] lines = cont.Split('\n');
+            string[] tableName = lines[0].Split(' ');
+
+            //MessageBox.Show(tableName[0].Length+" "+tableName[0]);
+            chemistryController = new ChemistryElementController();
+            ChemistryElement element = chemistryController.findByTableName(tableName[0]);
+            chemistryController.close();
+
+            viewController.checkedChemistryElementPage(element);
+        }
+    
+
+    private void generateMendeleev(List<ChemistryElement> elements)
         {
 
             int startWhere10Columns = 18;
@@ -80,6 +98,8 @@ namespace Курсова.Controlls
             {
                 Button button = new Button();
                 button.Content = elements[i].TableTame + "     " + (i + 1) + "\n" + elements[i].FullName + " " + elements[i].AtomicWeight;
+                button.Click += Button_Clickk;
+                button.Cursor = Cursors.Hand;
                 chemistryTable.Children.Add(button);
 
                 if (i == where8ColumnsCheck[index])
@@ -95,9 +115,11 @@ namespace Курсова.Controlls
                             case 'p': buttonNew.Background = Brushes.LightYellow; break;
                             case 'd': buttonNew.Background = Brushes.LightBlue; break;
                         }
+                        buttonNew.Click += Button_Clickk;
+                        buttonNew.Cursor = Cursors.Hand;
                         chemistryTable.Children.Add(buttonNew);
                         Grid.SetRow(buttonNew, rowWhere8Columns);
-                        Grid.SetColumn(buttonNew, col);
+                        Grid.SetColumn(buttonNew, col);                
                         col++;
                     }
                     rowWhere8Columns++;
@@ -116,7 +138,8 @@ namespace Курсова.Controlls
                             case 'p': buttonNew.Background = Brushes.LightYellow; break;
                             case 'd': buttonNew.Background = Brushes.LightBlue; break;
                         }
-
+                        buttonNew.Click += Button_Clickk;
+                        buttonNew.Cursor = Cursors.Hand;
                         chemistryTable.Children.Add(buttonNew);
                         Grid.SetRow(buttonNew, rowWhere10Columns);
                         Grid.SetColumn(buttonNew, col);
@@ -136,6 +159,8 @@ namespace Курсова.Controlls
                 Button button = new Button();
                 button.Content = elements[0].TableTame + "     " + 1 + "\n" + elements[0].FullName + " " + elements[0].AtomicWeight;
                 button.Background = Brushes.Pink;
+                button.Click += Button_Clickk;
+                button.Cursor = Cursors.Hand;
                 chemistryTable.Children.Add(button);
                 Grid.SetRow(button, 0);
                 Grid.SetColumn(button, 0);
@@ -143,6 +168,8 @@ namespace Курсова.Controlls
                 Button button1 = new Button();
                 button1.Content = elements[1].TableTame + "     " + 2 + "\n" + elements[1].FullName + " " + elements[1].AtomicWeight;
                 button1.Background = Brushes.Pink;
+                button1.Click += Button_Clickk;
+                button1.Cursor = Cursors.Hand;
                 chemistryTable.Children.Add(button1);
                 Grid.SetRow(button1, 0);
                 Grid.SetColumn(button1, 9);

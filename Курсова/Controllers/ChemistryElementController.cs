@@ -23,6 +23,10 @@ namespace Курсова.Controllers
             chemistryService.setCommand(command);
         }
 
+        public ChemistryElement findByTableName(string tableName)
+        {
+            return chemistryService.findByTableName(tableName);
+        }
 
         public void add(ChemistryElement chemistryElement){
             chemistryService.add(chemistryElement);

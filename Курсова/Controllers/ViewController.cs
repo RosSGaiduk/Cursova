@@ -18,6 +18,12 @@ namespace Курсова.Controllers
 
         public ViewController(MainWindow mainW) { mainWind = mainW; }
 
+        public void checkedChemistryElementPage(ChemistryElement chemistryElement)
+        {
+            mainWind.MainThis.Children.Clear();
+            mainWind.MainThis.Children.Add(new CheckedElement(mainWind, chemistryElement));
+        }
+
         public void checkUserGo(string urlPageWanted)
         {
             mainWind.MainThis.Children.Clear();
