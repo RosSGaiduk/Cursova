@@ -44,43 +44,63 @@ namespace Курсова.Controlls
             {
                 string str = "/MyImages/Графічні моделі/Гідроген.png";
                 //MessageBox.Show(""+(elements[i].GraphicModel == str));
-                addImage(elements[i].GraphicModel);
-                addRichTextBox(elements[i]);
-                addButton(elements[i].Id);
+                addImage(elements[i].GraphicModel,i);
+                addRichTextBox(elements[i],i);
+                //addRichTextBox(elements[i]);
+                //addButton(elements[i].Id);
             }
-
+            MessageBox.Show(allElements.RowDefinitions.Count+"");
         }
 
 
-        private void addImage(string url)
+        private void addImage(string url,int i)
         {
 
             Image myImage3 = new Image();
             myImage3.Width = 160; myImage3.Height = 256;
 
             Thickness marginImg = myImage3.Margin;
-            marginImg.Left = -300;
-            marginImg.Top = 0;
+            //marginImg.Left = -300;
+            //marginImg.Top = 0;
             myImage3.Margin = marginImg;
 
             myImage3.Stretch = Stretch.Uniform;
             myImage3.Source = new BitmapImage(new Uri(url, UriKind.Relative));
 
-            stPnel.Children.Add(myImage3);
+            if (i % 4 == 0)
+            {
+                RowDefinition row = new RowDefinition();
+                row.Height = new GridLength(256);
+               allElements.RowDefinitions.Add(row);
+            }  
+            
+            Grid.SetRow(myImage3,i/4 + 1); 
+            Grid.SetColumn(myImage3, (i % 4)*2);
+            
+         
+            allElements.Children.Add(myImage3);
+            
+
+            //stPnel.Children.Add(myImage3);
 
         }
 
-        private void addRichTextBox(ChemistryElement element)
+        private void addRichTextBox(ChemistryElement element,int index)
         {
             RichTextBox richBox = new RichTextBox();
 
             Thickness margin = richBox.Margin;
-            richBox.Width = 200; richBox.Height = 200;
-            margin.Left = 70;
-            margin.Top = -200;
+            richBox.Width = 160; richBox.Height = 256;
+            //margin.Left = -300;
+            //margin.Top = 0;
             richBox.Margin = margin;
-            stPnel.Children.Add(richBox);
+            //stPnel.Children.Add(richBox);
             richBox.Document.Blocks.Add(new Paragraph(new Run(element.ToString())));
+            Grid.SetRow(richBox, index / 4 + 1);
+            Grid.SetColumn(richBox, (index % 4) * 2 + 1);
+
+
+            allElements.Children.Add(richBox);
         }
 
         private void addButton(int id)
@@ -92,7 +112,7 @@ namespace Курсова.Controlls
             margin.Top = 30;
             margin.Left = 150;
             button.Margin = margin;
-            stPnel.Children.Add(button);
+            //stPnel.Children.Add(button);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -111,6 +131,8 @@ namespace Курсова.Controlls
         {
             viewController.goTo("book");
         }
+
+       
     }
 
  

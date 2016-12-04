@@ -8,7 +8,7 @@
              d:DesignHeight="500" d:DesignWidth="1000">
     <Grid>
         <StackPanel Name="stPnel">
-            <Button x:Name="button" Content="Back" Margin="0,0,904,0" Height="26" Click="button_Click" Cursor="Hand"/>
+            <Button x:Name="button" Content="Back" Margin="0,0,904,0" Height="26" Width="80" Click="button_Click" Cursor="Hand"/>
             <!--<Image HorizontalAlignment="Left" Height="160" Width="256" Source="/MyImages/me.png" Margin="10,10,0,150.8"></Image>-->
         </StackPanel>
     </Grid>

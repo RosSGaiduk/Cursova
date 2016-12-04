@@ -3,19 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Курсова.Controlls"
-             
+             xmlns:local="clr-namespace:Курсова.Controlls"       
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
+             d:DesignHeight="500" d:DesignWidth="1000">
+    <ScrollViewer Height="Auto">
+        <Grid Name="allElements">
+     
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+             <ColumnDefinition Width="160"/>
+            </Grid.ColumnDefinitions>
 
-        <ScrollViewer>
-            <StackPanel Name="stPnel">
-                <!--<Image HorizontalAlignment="Left" Height="160" Width="256" Source="/MyImages/me.png" Margin="10,10,0,150.8"></Image>-->
-            </StackPanel>
-        </ScrollViewer>
-        <Button x:Name="button1" Content="Page for creating" HorizontalAlignment="Left" Margin="0,35,0,0" VerticalAlignment="Top" Width="95" Height="30" Click="button1_Click" Cursor="Hand"/>
-        <Button x:Name="button2" Content="Deleting page" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="30" Click="button2_Click" Cursor="Hand"/>
-        <Button x:Name="button3" Content="Book" HorizontalAlignment="Left" Margin="0,70,0,0" VerticalAlignment="Top" Width="95" Height="30" Click="button3_Click" Cursor="Hand"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="180">
+                </RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Name ="button1" Width="160" Height="30" Grid.Row="0" Grid.Column="0" Margin="0,10,0,140.8" Click="button1_Click" Cursor="Hand">Create element page</Button>
+            <Button Name="button2" Width="160" Height="30" Grid.Row="0" Grid.Column="0" Margin="0,36,0,94.8" Click="button2_Click" Cursor="Hand">Delete element page</Button>
+            <Button Name ="button3" Width="160" Height="30" Grid.Row="0" Grid.Column="0" Margin="0,62,0,47.8" Click="button3_Click" Cursor="Hand">Book</Button>
+            
+
+        <!--<ScrollViewer>-->
+            <!--<StackPanel Name="stPnel">
+                --><!--<Image HorizontalAlignment="Left" Height="160" Width="256" Source="/MyImages/me.png" Margin="10,10,0,150.8"></Image>--><!--
+            </StackPanel>-->
+           
+            
+            
+        <!--</ScrollViewer>-->
+        
     </Grid>
+    </ScrollViewer>
 </UserControl>
