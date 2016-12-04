@@ -37,8 +37,9 @@ namespace Курсова.Controlls
             List<ChemistryElement> elements = chemistryController.findAll();
             chemistryController.close();
             generateMendeleev(elements);
-            //formTable(elements);
-        }
+            viewController = new ViewController(parent);
+        //formTable(elements);
+    }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
@@ -150,6 +151,23 @@ namespace Курсова.Controlls
             {
 
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //viewController.goTo("creatingPage");
+            viewController.checkUserGo("creatingPage");
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            //viewController.goTo("deletePage");
+            viewController.checkUserGo("deletePage");
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("showAll");
         }
     }
 }

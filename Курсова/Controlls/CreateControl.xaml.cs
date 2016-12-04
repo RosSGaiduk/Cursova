@@ -257,15 +257,8 @@ namespace Курсова.Controlls
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //MainWindow mainWindow = new MainWindow();
-            //mainWindow.Close();
-            //mainWindow.MainThis.Children.Clear();
-            //mainWindow.MainThis.Children.Add(new UserControl2());
-            //mainWindow.Show();
-            //parent.Close();
-            //parent.MainThis.Children.Clear();
-            //parent.MainThis.Children.Add(new DeleteControl(parent));
-            viewController.goTo("deletePage");
+            viewController.checkUserGo("deletePage");
+            //viewController.goTo("deletePage");
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)

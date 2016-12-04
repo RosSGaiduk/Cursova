@@ -38,14 +38,6 @@ namespace Курсова.Controlls
             viewController = new ViewController(parent);
 
 
-            //addImage("/MyImages/Графічні моделі/Арсен.png");
-            //addRichTextBox();
-            //addImage("/MyImages/Графічні моделі/Актиній.png");
-            //addRichTextBox();
-            //addImage("/MyImages/Графічні моделі/Оксиген.png");
-            //addRichTextBox();
-
-
             chemistryController = new ChemistryElementController();
             List<ChemistryElement> elements = chemistryController.findAll();
             for (int i = 0; i < elements.Count; i++)
@@ -105,12 +97,19 @@ namespace Курсова.Controlls
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            viewController.goTo("showAll");
+            //viewController.goTo("creatingPage");
+            viewController.checkUserGo("creatingPage");
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            viewController.goTo("deletePage");
+            //viewController.goTo("deletePage");
+            viewController.checkUserGo("deletePage");
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("book");
         }
     }
 

@@ -5,25 +5,26 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Курсова.Controlls"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="400">
+             d:DesignHeight="500" d:DesignWidth="1000">
     <Grid Margin="0,0,-25,-71" Name="DeleteGrid">
-        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="95" SelectionChanged="comboBox1_SelectionChanged"/>
-        <Label x:Name="label1" Content="Таблиця" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Width="110"/>
-        <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="120,35,0,0" VerticalAlignment="Top" Width="95" SelectionChanged="comboBox2_SelectionChanged"/>
-        <Label x:Name="label2" Content="Вибрати" HorizontalAlignment="Left" Margin="120,4,0,0" VerticalAlignment="Top" Width="110"/>
-        <ComboBox x:Name="comboBox3" HorizontalAlignment="Left" Margin="230,35,0,0" VerticalAlignment="Top" Width="95" SelectionChanged="comboBox3_SelectionChanged"/>
-        <Label x:Name="label3" Content="Виберіть id" HorizontalAlignment="Left" Margin="230,4,0,0" VerticalAlignment="Top" Width="110"/>
-        <Button x:Name="deleteButton" Content="Delete" HorizontalAlignment="Left" Margin="340,35,0,0" VerticalAlignment="Top" Width="75" Height="22" Click="OnDeleteButton_Click"/>
-        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="199" Margin="5,101,0,0" VerticalAlignment="Top" Width="400">
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="363,84,0,0" VerticalAlignment="Top" Width="95" SelectionChanged="comboBox1_SelectionChanged"/>
+        <Label x:Name="label1" Content="Таблиця" HorizontalAlignment="Left" Margin="361,53,0,0" VerticalAlignment="Top" Width="110"/>
+        <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="476,84,0,0" VerticalAlignment="Top" Width="95" SelectionChanged="comboBox2_SelectionChanged"/>
+        <Label x:Name="label2" Content="Вибрати" HorizontalAlignment="Left" Margin="474,53,0,0" VerticalAlignment="Top" Width="110"/>
+        <ComboBox x:Name="comboBox3" HorizontalAlignment="Left" Margin="589,84,0,0" VerticalAlignment="Top" Width="95" SelectionChanged="comboBox3_SelectionChanged"/>
+        <Label x:Name="label3" Content="Виберіть id" HorizontalAlignment="Left" Margin="584,53,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="deleteButton" Content="Delete" HorizontalAlignment="Left" Margin="700,84,0,0" VerticalAlignment="Top" Width="75" Height="22" Click="OnDeleteButton_Click"/>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="336" Margin="138,154,0,0" VerticalAlignment="Top" Width="637">
             <FlowDocument>
                 <Paragraph>
                     <Run Text=""/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Label x:Name="label4" Content="Тут ви можете подивитись, що є б бд" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="220"/>
-        <Button x:Name="button" Content="Page for creating" Click="Button_Click" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
-        <Button x:Name="button1" Content="Show all" Click="Button1_Click" HorizontalAlignment="Left" Margin="120,315,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
+        <Label x:Name="label4" Content="Тут ви можете подивитись, що є б бд" HorizontalAlignment="Left" Margin="138,123,0,0" VerticalAlignment="Top" Width="220"/>
+        <Button x:Name="button" Content="Page for creating" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
+        <Button x:Name="button1" Content="Show all" Click="Button1_Click" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
+        <Button x:Name="button2" Content="Book" Click="Button2_Click" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="95" Height="38"/>
 
 
     </Grid>

@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Курсова.Controlls"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="1100">
+             d:DesignHeight="650" d:DesignWidth="1100">
     <Grid Name="chemistryTable">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -21,6 +21,7 @@
             <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="52" />
             <RowDefinition Height="52" />
             <RowDefinition Height="52" />
             <RowDefinition Height="52" />
@@ -133,5 +134,9 @@
                 <Paragraph FontSize="36" TextAlignment="Center">1</Paragraph>
             </FlowDocument>
         </RichTextBox>
+
+        <Button Grid.Column="0" Grid.Row="12" Content="Page for create" Click="Button_Click"></Button>
+        <Button Grid.Column="1" Grid.Row="12" Content="Page for delete" Click="Button_Click_2"></Button>
+        <Button Grid.Column="2" Grid.Row="12" Content="Show all" Click="Button_Click_3"></Button>
     </Grid>
 </UserControl>

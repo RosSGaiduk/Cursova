@@ -406,12 +406,18 @@ namespace Курсова.Controlls
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            viewController.goTo("creatingPage");
+            //viewController.goTo("creatingPage");
+            viewController.checkUserGo("creatingPage");
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            viewController.goTo("creatingPage");
+            viewController.goTo("showAll");
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("book");
         }
     }
 }

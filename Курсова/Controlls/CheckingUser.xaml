@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Курсова.Controlls.CheckingUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Курсова.Controlls"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="1000">
+    <Grid>
+        <Label x:Name="label" Content="User" HorizontalAlignment="Left" Margin="224,198,0,0" VerticalAlignment="Top" Width="56"/>
+        <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="224,246,0,0" VerticalAlignment="Top" Width="66"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="30" Margin="309,198,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="135"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="30" Margin="309,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="135" RenderTransformOrigin="0.514,1.055"/>
+        <Button x:Name="button" Content="Check" HorizontalAlignment="Left" Margin="378,290,0,0" VerticalAlignment="Top" Width="66" Height="25" Click="button_Click_1"/>
+
+    </Grid>
+</UserControl>

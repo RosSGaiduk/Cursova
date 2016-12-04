@@ -21,10 +21,14 @@ namespace Курсова
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool authenticated = false;
         public MainWindow()
         {
             InitializeComponent();           
-            MainThis.Children.Add(new CreateControl(this));
+            MainThis.Children.Add(new BookPage1(this));
         }
+
+        public  bool getAuth() { return authenticated; }
+        public void setAuth(bool auth) { authenticated = auth; }
     }
 }

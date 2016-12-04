@@ -18,6 +18,15 @@ namespace Курсова.Controllers
 
         public ViewController(MainWindow mainW) { mainWind = mainW; }
 
+        public void checkUserGo(string urlPageWanted)
+        {
+            mainWind.MainThis.Children.Clear();
+            if (!mainWind.getAuth())
+            {
+                mainWind.MainThis.Children.Add(new CheckingUser(mainWind, urlPageWanted));
+            } else goTo(urlPageWanted);
+        }
+
         public void goTo(string page)
         {
             switch (page)
@@ -44,8 +53,7 @@ namespace Курсова.Controllers
                     {
                         mainWind.MainThis.Children.Clear();
                         mainWind.MainThis.Children.Add(new BookPage1(mainWind));
-                    }
-                    break;
+                    } break;
             }
         }
 
