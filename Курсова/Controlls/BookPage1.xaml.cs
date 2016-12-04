@@ -37,50 +37,37 @@ namespace Курсова.Controlls
             List<ChemistryElement> elements = chemistryController.findAll();
             chemistryController.close();
             generateMendeleev(elements);
+            //formTable(elements);
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
 
-
-        private void formTable(List<ChemistryElement>elements)
+        private void formTable(List<ChemistryElement> elements)
         {
-            try
-            {
-               Button button = new Button();
-                button.Content = elements[0].TableTame + "     " + 1 + "\n"+elements[0].FullName+" "+elements[0].AtomicWeight;
-                chemistryTable.Children.Add(button);
-                Grid.SetRow(button, 0);
-                Grid.SetColumn(button, 0);
-
-                Button button1 = new Button();
-                button1.Content = elements[1].TableTame + "     " + 2 + "\n" + elements[1].FullName + " " + elements[1].AtomicWeight;
-                chemistryTable.Children.Add(button1);
-                Grid.SetRow(button1, 0);
-                Grid.SetColumn(button1, 10);
-            } catch (Exception ex)
-            {
-
-            }
-
-            for (int i = 2; i < elements.Count; i++)
+            for (int i = 0; i < elements.Count; i++)
             {
                 Button button = new Button();
-                button.Content = elements[i].TableTame + "     "+(i+1)+"\n" + elements[i].FullName + " " + elements[i].AtomicWeight;
+                button.Content = elements[i].TableTame + "     " + (i + 1) + "\n" + elements[i].FullName + " " + elements[i].AtomicWeight;
                 chemistryTable.Children.Add(button);
-                int row = (i - 2) / chemistryTable.ColumnDefinitions.Count + 1;
+                int row = i / (chemistryTable.ColumnDefinitions.Count-1);
                 Grid.SetRow(button, row);
-                int column = i % (chemistryTable.ColumnDefinitions.Count);
-                if (i % (chemistryTable.ColumnDefinitions.Count) - 2 >= 0)
+                int column = i % (chemistryTable.ColumnDefinitions.Count-1);
+                if (i % (chemistryTable.ColumnDefinitions.Count-1) >= 0)
                 {
-                    Grid.SetColumn(button, column - 2);
+                    Grid.SetColumn(button, column);
                 }
-                else{
-                    Grid.SetColumn(button, column+ chemistryTable.ColumnDefinitions.Count-2);
+                else
+                {
+                    Grid.SetColumn(button, column + chemistryTable.ColumnDefinitions.Count - 1);
                 }
             }
         }
-        
+
         private void generateMendeleev(List<ChemistryElement> elements)
         {
-           
+
             int startWhere10Columns = 18;
             int[] where8ColumnsCheck = { 2, 10, 28, 46, 64, 78, 85 };
             int rowWhere10Columns = 3;
@@ -143,12 +130,11 @@ namespace Курсова.Controlls
                     break;
                 }
             }
-
             try
             {
                 Button button = new Button();
                 button.Content = elements[0].TableTame + "     " + 1 + "\n" + elements[0].FullName + " " + elements[0].AtomicWeight;
-                button.Background = Brushes.Pink; 
+                button.Background = Brushes.Pink;
                 chemistryTable.Children.Add(button);
                 Grid.SetRow(button, 0);
                 Grid.SetColumn(button, 0);
@@ -158,13 +144,12 @@ namespace Курсова.Controlls
                 button1.Background = Brushes.Pink;
                 chemistryTable.Children.Add(button1);
                 Grid.SetRow(button1, 0);
-                Grid.SetColumn(button1, 10);
+                Grid.SetColumn(button1, 9);
             }
             catch (Exception ex)
             {
 
             }
-
         }
     }
 }

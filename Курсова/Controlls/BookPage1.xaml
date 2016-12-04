@@ -5,9 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Курсова.Controlls"
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="1000">
+             d:DesignHeight="600" d:DesignWidth="1100">
     <Grid Name="chemistryTable">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="100"/>
@@ -25,12 +26,112 @@
             <RowDefinition Height="52" />
             <RowDefinition Height="52" />
             <RowDefinition Height="52" />
-            <RowDefinition Height="42" />
-            <RowDefinition Height="42" />
-            <RowDefinition Height="42" />
-            <RowDefinition Height="42" />
-            <RowDefinition Height="42" />
+            <RowDefinition Height="52" />
+            <RowDefinition Height="52" />
+            <RowDefinition Height="52" />
+            <RowDefinition Height="52" />
+            <RowDefinition Height="52" />
+            <RowDefinition Height="52" />
         </Grid.RowDefinitions>
-            
+        <RichTextBox Grid.Row="10" Grid.Column="0" Background="#FFC7A18F" FontSize="22" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">I</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="10" Grid.Column="1"  Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">II</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="10" Grid.Column="2"  Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">III</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="10" Grid.Column="3"  Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">VI</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="10" Grid.Column="4"  Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">V</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="10" Grid.Column="5"  Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">VI</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="10" Grid.Column="6"  Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">VII</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="10" Grid.Column="7"  Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">VIII</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="10" Grid.Column="8"  Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">VIII</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="10" Grid.Column="9"  Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">VIII</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="9" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">7</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="8" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">6</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="7" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">6</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="6" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">5</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="5" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">5</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="4" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">4</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="3" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">4</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="2" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">3</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="1" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">2</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Grid.Row="0" Grid.Column="11" Background="#FFC7A18F" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="36" TextAlignment="Center">1</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
     </Grid>
 </UserControl>
