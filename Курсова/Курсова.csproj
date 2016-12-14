@@ -250,7 +250,6 @@
     <Resource Include="MyImages\Графічні моделі\Рутеній.png" />
     <Resource Include="MyImages\Графічні моделі\Самарій.png" />
     <Resource Include="MyImages\Графічні моделі\Селен.png" />
-    <Resource Include="MyImages\Графічні моделі\Сиборний.png" />
     <Resource Include="MyImages\Графічні моделі\Силіцій.png" />
     <Resource Include="MyImages\Графічні моделі\Скандій.png" />
     <Resource Include="MyImages\Графічні моделі\Станум.png" />
@@ -275,13 +274,16 @@
     <Resource Include="MyImages\Графічні моделі\Ферум.png" />
     <Resource Include="MyImages\Графічні моделі\Флуор.png" />
     <Resource Include="MyImages\Графічні моделі\Фосфор.png" />
-    <Resource Include="MyImages\Графічні моделі\Францій.svg.png" />
+    <Resource Include="MyImages\Графічні моделі\Францій.png" />
     <Resource Include="MyImages\Графічні моделі\Хлор.png" />
     <Resource Include="MyImages\Графічні моделі\Хром.png" />
     <Resource Include="MyImages\Графічні моделі\Цезій.png" />
     <Resource Include="MyImages\Графічні моделі\Церій.png" />
     <Resource Include="MyImages\Графічні моделі\Цинк.png" />
     <Resource Include="MyImages\Графічні моделі\Цирконій.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MyImages\Графічні моделі\Сиборній.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

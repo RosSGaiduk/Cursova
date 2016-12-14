@@ -39,6 +39,15 @@ namespace Курсова.Controllers
             return chemistryService.findOne(id);
         }
 
+        public List<ChemistryElement> findAllByOrbital(string orbital)
+        {
+            return chemistryService.findAllByOrbital(orbital);
+        }
+        public List<ChemistryElement> findAllByGroup(string group)
+        {
+            return chemistryService.findAllByGroup(group);
+        }
+
         public List<ChemistryElement> findAll()
         {
             return chemistryService.findAll();

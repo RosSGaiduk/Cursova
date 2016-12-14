@@ -94,9 +94,9 @@ namespace Курсова.Services
         
         public ChemistryElement findByTableName(string tableName)
         {
-            command.CommandText = "Select * from ChemistryElement where tableName = ?id";
+            command.CommandText = "Select * from ChemistryElement where tableName = ?tb";
             command.Prepare();
-            command.Parameters.AddWithValue("?id", tableName);
+            command.Parameters.AddWithValue("?tb", tableName);
             reader = command.ExecuteReader();
             reader.Read();
             ChemistryElement chemistryElement;
@@ -112,12 +112,58 @@ namespace Курсова.Services
             }
             catch (Exception ex)
             {
-                reader.Close();
+                //reader.Close();
                 return null;
             }
+            
 
             return chemistryElement;
         }
+
+
+        public List<ChemistryElement> findAllByGroup(string group)
+        {
+            command.CommandText = "Select * from ChemistryElement where Groupp = ?gr";
+            command.Prepare();
+            command.Parameters.AddWithValue("?gr", group);
+            reader = command.ExecuteReader();
+            
+            List<ChemistryElement> chemistryElements = new List<ChemistryElement>();
+
+            while (reader.Read())
+            {
+                string str = reader[8].ToString();
+                char c = str[0];
+                chemistryElements.Add(new ChemistryElement(int.Parse(reader[0].ToString()), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), int.Parse(reader[4].ToString()),
+                    reader[5].ToString(), int.Parse(reader[6].ToString()), double.Parse(reader[7].ToString()), c, reader[9].ToString(),
+                    reader[10].ToString(), reader[11].ToString()));
+            }
+            reader.Close();
+            return chemistryElements;
+        }
+
+
+        public List<ChemistryElement> findAllByOrbital(string orbital)
+        {
+            command.CommandText = "Select * from ChemistryElement where Orbital = ?or";
+            command.Prepare();
+            command.Parameters.AddWithValue("?or", orbital);
+            reader = command.ExecuteReader();
+
+            List<ChemistryElement> chemistryElements = new List<ChemistryElement>();
+
+            while (reader.Read())
+            {
+                string str = reader[8].ToString();
+                char c = str[0];
+                chemistryElements.Add(new ChemistryElement(int.Parse(reader[0].ToString()), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), int.Parse(reader[4].ToString()),
+                    reader[5].ToString(), int.Parse(reader[6].ToString()), double.Parse(reader[7].ToString()), c, reader[9].ToString(),
+                    reader[10].ToString(), reader[11].ToString()));
+            }
+            reader.Close();
+            return chemistryElements;
+        }
+
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
