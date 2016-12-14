@@ -33,3 +33,5 @@ C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\П
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\CheckingUser.baml
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\CheckedElement.g.cs
 C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\CheckedElement.baml
+C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\PagesOfBook\Page1.g.cs
+C:\Users\Rostyslav\Desktop\Універ\3 курс Пма-32\1 семестр\ПЗ\Курсова\Курсова\obj\Debug\Controlls\PagesOfBook\Page1.baml

@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Курсова.Controlls.PagesOfBook.Page1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Курсова.Controlls.PagesOfBook"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="1100">
+    <Grid Name="gridForPage1">
+        <Button x:Name="button" Content="Next page" HorizontalAlignment="Left" Margin="1032,651,-41,-52.4" VerticalAlignment="Top" Width="109" Click="button_Click" Height="51" RenderTransformOrigin="0.62,1.506" Cursor="Hand"/>
+        <Label x:Name="label" Content="Вступ" HorizontalAlignment="Left" Margin="397,10,0,0" VerticalAlignment="Top" Width="360" Height="54" FontSize="36"/>
+        <Label x:Name="label1" Content="Вступ" HorizontalAlignment="Left" Margin="855,10,0,0" VerticalAlignment="Top" Width="245" Height="54" FontSize="36"/>
+        <Button x:Name="button1" Content="Previous page" HorizontalAlignment="Left" Margin="311,651,0,-52.4" VerticalAlignment="Top" Width="109" Click="button1_Click" Height="51" RenderTransformOrigin="0.62,1.506" Cursor="Hand"/>
+
+    </Grid>
+</UserControl>

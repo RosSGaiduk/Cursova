@@ -91,6 +91,9 @@
     <Compile Include="Controlls\DeleteControl.xaml.cs">
       <DependentUpon>DeleteControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controlls\PagesOfBook\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controlls\ShowAllElements.xaml.cs">
       <DependentUpon>ShowAllElements.xaml</DependentUpon>
     </Compile>
@@ -116,6 +119,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controlls\DeleteControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controlls\PagesOfBook\Page1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -284,6 +291,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="MyImages\Графічні моделі\Сиборній.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MyImages\Сторінки\picture1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MyImages\Сторінки\атом.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MyImages\Сторінки\органічна.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MyImages\Сторінки\атом2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

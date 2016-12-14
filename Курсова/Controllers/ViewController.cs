@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 using MySql.Data.Entity;
 using Курсова.Services;
 using Курсова.Controlls;
+using Курсова.Controlls.PagesOfBook;
 
 namespace Курсова.Controllers
 {
@@ -32,6 +33,13 @@ namespace Курсова.Controllers
                 mainWind.MainThis.Children.Add(new CheckingUser(mainWind, urlPageWanted));
             } else goTo(urlPageWanted);
         }
+
+        public void nextPage(int page)
+        {
+            mainWind.MainThis.Children.Clear();
+            mainWind.MainThis.Children.Add(new Page1(mainWind,page));
+        }
+
 
         public void goTo(string page)
         {

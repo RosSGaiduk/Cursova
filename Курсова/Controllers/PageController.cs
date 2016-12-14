@@ -49,5 +49,16 @@ namespace Курсова.Controllers
             pageService.close();
         }
 
+        public HashSet<Picture> findAllPicturesByIdPage(int idPage)
+        {
+            return pageService.findAllPicturesByIdPage(idPage);
+        }
+        public PageWithTextAndImage findOneByPage(int pageNumber)
+        {
+            return pageService.findOneByPage(pageNumber);
+        }
+
+
+
     }
 }

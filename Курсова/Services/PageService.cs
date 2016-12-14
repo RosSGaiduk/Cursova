@@ -52,6 +52,32 @@ namespace Курсова.Services
         }
 
 
+        public PageWithTextAndImage findOneByPage(int pageNumber)
+        {
+            command.CommandText = "Select * from PageWithTextAndImage where NumberOfPage = ?page";
+            command.Prepare();
+            command.Parameters.AddWithValue("?page", pageNumber);
+            reader = command.ExecuteReader();
+            reader.Read();
+            PageWithTextAndImage page;
+
+            try
+            {
+                page = new PageWithTextAndImage(int.Parse(reader[0].ToString()), int.Parse(reader[1].ToString()), reader[2].ToString());
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                reader.Close();
+                return null;
+            }
+
+            return page;
+        }
+
+
+
+
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public List<PageWithTextAndImage> findAll()
         {
@@ -64,6 +90,24 @@ namespace Курсова.Services
             }
             reader.Close();
             return pages;
+        }
+
+        public HashSet<Picture> findAllPicturesByIdPage(int idPage)
+        {
+            HashSet<Picture> pictures = new HashSet<Picture>();
+            //select * from picture join picture_page on picture_page.id_page = 7 and picture.id = picture_page.id_picture;
+            command.CommandText = "Select * from picture join picture_page on picture_page.id_page = ?idPage and picture.id = picture_page.id_picture";
+            command.Prepare();
+            command.Parameters.AddWithValue("?idPage", idPage);
+            reader = command.ExecuteReader();
+            
+            while (reader.Read())
+            {
+                
+                pictures.Add(new Picture(reader[1].ToString()));
+            }
+            reader.Close();
+            return pictures;
         }
 
     }
