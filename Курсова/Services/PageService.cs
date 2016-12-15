@@ -52,6 +52,16 @@ namespace Курсова.Services
         }
 
 
+        public int findMaxPage()
+        {
+            command.CommandText = "Select max(NumberOfPage) from PageWithTextAndImage where id>1";
+            command.ExecuteNonQuery();
+            reader = command.ExecuteReader();
+            reader.Read();
+            int max = int.Parse(reader[0].ToString());
+            reader.Close();
+            return max;
+        }
         public PageWithTextAndImage findOneByPage(int pageNumber)
         {
             command.CommandText = "Select * from PageWithTextAndImage where NumberOfPage = ?page";

@@ -29,6 +29,7 @@ namespace Курсова.Controlls.PagesOfBook
         private PageController pageController;
         private ImageController imageController;
         private int pageNumber;
+        private int maxPageNumber;
         public Page1(MainWindow wind,int pageNumber)
         {
             InitializeComponent();
@@ -43,6 +44,8 @@ namespace Курсова.Controlls.PagesOfBook
             PageWithTextAndImage page = pageController.findOneByPage(pageNumber);
             addRichTextBox(page);
             pageController.close();
+
+
 
             switch (pageNumber)
             {
@@ -84,7 +87,11 @@ namespace Курсова.Controlls.PagesOfBook
                 index ++;
             }
             pageController.close();
-            
+
+
+            pageController = new PageController();
+            maxPageNumber = pageController.findMaxPage();
+            pageController.close();
 
         }
 
@@ -116,7 +123,7 @@ namespace Курсова.Controlls.PagesOfBook
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (pageNumber < 4)
+            if (pageNumber < maxPageNumber)
                 viewController.nextPage(pageNumber + 1);
             else viewController.goTo("book");
         }

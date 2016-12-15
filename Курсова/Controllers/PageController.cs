@@ -44,6 +44,11 @@ namespace Курсова.Controllers
             return pageService.findAll();
         }
 
+        public int findMaxPage()
+        {
+            return pageService.findMaxPage();
+        }
+
         public void close()
         {
             pageService.close();

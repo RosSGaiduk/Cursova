@@ -7,6 +7,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="1000">
     <Grid>
+        <Menu>
+            <MenuItem Header="Book" Click="MenuItem_Click"></MenuItem>
+            <MenuItem Header="Show all" Click="MenuItem_Click_1"></MenuItem>
+            <MenuItem Header="Exit" Click="MenuItem_Click_2"></MenuItem>
+        </Menu>
         <Label x:Name="label" Content="User" HorizontalAlignment="Left" Margin="224,198,0,0" VerticalAlignment="Top" Width="56"/>
         <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="224,246,0,0" VerticalAlignment="Top" Width="66"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="30" Margin="309,198,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="135"/>

@@ -19,6 +19,7 @@ namespace Курсова.Controllers
 
         public ViewController(MainWindow mainW) { mainWind = mainW; }
 
+        //коли вибиваєм елемент з таблички
         public void checkedChemistryElementPage(ChemistryElement chemistryElement)
         {
             mainWind.MainThis.Children.Clear();

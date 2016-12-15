@@ -46,5 +46,21 @@ namespace Курсова.Controlls
                 textBox2.Text = "";
             }
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("book");
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            viewController.goTo("showAll");
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Bye");
+            Application.Current.Shutdown();
+        }
     }
 }
